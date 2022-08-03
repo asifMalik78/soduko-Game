@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soduko Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main-heading">
+        <h1>SODUKO GAME</h1>
+    </div>
+    <div class="container">
+        <div class="ls-solid ts-solid ts-solid rs-dashed bs-dashed" id="0"></div>
+        <div class="ts-solid rs-dashed bs-dashed" id="1"></div>
+        <div class="ts-solid rs-solid bs-dashed" id="2"></div>
+        <div class="ts-solid rs-dashed bs-dashed" id="3"></div>
+        <div class="ts-solid rs-dashed bs-dashed" id="4"></div>
+        <div class="ts-solid rs-solid bs-dashed" id="5"></div>
+        <div class="ts-solid rs-dashed bs-dashed" id="6"></div>
+        <div class="ts-solid rs-dashed bs-dashed" id="7"></div>
+        <div class="ts-solid rs-solid bs-dashed" id="8"></div>
+        <div class="ls-solid rs-dashed bs-dashed" id="9"></div>
+        <div class="rs-dashed bs-dashed" id="10"></div>
+        <div class="rs-solid bs-dashed" id="11"></div>
+        <div class="rs-dashed bs-dashed" id="12"></div>
+        <div class="rs-dashed bs-dashed" id="13"></div>
+        <div class="rs-solid bs-dashed" id="14"></div>
+        <div class="rs-dashed bs-dashed" id="15"></div>
+        <div class="rs-dashed bs-dashed" id="16"></div>
+        <div class="rs-solid bs-dashed" id="17"></div>
+        <div class="ls-solid rs-dashed bs-solid" id="18"></div>
+        <div class="rs-dashed bs-solid" id="19"></div>
+        <div class="rs-solid bs-solid" id="20"></div>
+        <div class="rs-dashed bs-solid" id="21"></div>
+        <div class="rs-dashed bs-solid bs-solid" id="22"></div>
+        <div class="rs-solid bs-solid" id="23"></div>
+        <div class="rs-dashed bs-solid" id="24"></div>
+        <div class="rs-dashed bs-solid" id="25"></div>
+        <div class="rs-solid bs-solid" id="26"></div>
+        <div class="ls-solid rs-dashed bs-dashed" id="27"></div>
+        <div class="rs-dashed bs-dashed" id="28"></div>
+        <div class="rs-solid bs-dashed" id="29"></div>
+        <div class="rs-dashed bs-dashed" id="30"></div>
+        <div class="rs-dashed bs-dashed" id="31"></div>
+        <div class="rs-solid bs-dashed" id="32"></div>
+        <div class="rs-dashed bs-dashed" id="33"></div>
+        <div class="rs-dashed bs-dashed" id="34"></div>
+        <div class="rs-solid bs-dashed" id="35"></div>
+        <div class="ls-solid rs-dashed bs-dashed" id="36"></div>
+        <div class="rs-dashed bs-dashed" id="37"></div>
+        <div class="rs-solid bs-dashed" id="38"></div>
+        <div class="rs-dashed bs-dashed" id="39"></div>
+        <div class="rs-dashed bs-dashed" id="40"></div>
+        <div class="rs-solid bs-dashed" id="41"></div>
+        <div class=" rs-dashed bs-dashed" id="42"></div>
+        <div class="rs-dashed bs-dashed" id="43"></div>
+        <div class="rs-solid bs-dashed" id="44"></div>
+        <div class="ls-solid rs-dashed bs-solid" id="45"></div>
+        <div class="rs-dashed bs-solid" id="46"></div>
+        <div class="rs-solid bs-solid" id="47"></div>
+        <div class="rs-dashed bs-solid" id="48"></div>
+        <div class="rs-dashed bs-solid" id="49"></div>
+        <div class="rs-solid bs-solid" id="50"></div>
+        <div class="rs-dashed bs-solid" id="51"></div>
+        <div class="rs-dashed bs-solid" id="52"></div>
+        <div class="rs-solid bs-solid" id="53"></div>
+        <div class="ls-solid rs-dashed bs-dashed" id="54"></div>
+        <div class="rs-dashed bs-dashed" id="55"></div>
+        <div class="rs-solid bs-dashed" id="56"></div>
+        <div class="rs-dashed bs-dashed" id="57"></div>
+        <div class="rs-dashed bs-dashed" id="58"></div>
+        <div class="rs-solid bs-dashed" id="59"></div>
+        <div class="rs-dashed bs-dashed" id="60"></div>
+        <div class="rs-dashed bs-dashed" id="61"></div>
+        <div class="rs-solid bs-dashed" id="62"></div>
+        <div class="ls-solid rs-dashed bs-dashed" id="63"></div>
+        <div class="rs-dashed bs-dashed" id="64"></div>
+        <div class="rs-solid bs-dashed" id="65"></div>
+        <div class="rs-dashed bs-dashed" id="66"></div>
+        <div class="rs-dashed bs-dashed" id="67"></div>
+        <div class="rs-solid bs-dashed" id="68"></div>
+        <div class="rs-dashed bs-dashed" id="69"></div>
+        <div class="rs-dashed bs-dashed" id="70"></div>
+        <div class="rs-solid bs-dashed" id="71"></div>
+        <div class="ls-solid rs-dashed bs-solid" id="72"></div>
+        <div class="rs-dashed bs-solid" id="73"></div>
+        <div class="rs-solid bs-solid" id="74"></div>
+        <div class="rs-dashed bs-solid" id="75"></div>
+        <div class="rs-dashed bs-solid" id="76"></div>
+        <div class="rs-solid bs-solid" id="77"></div>
+        <div class="rs-dashed bs-solid" id="78"></div>
+        <div class="rs-dashed bs-solid" id="79"></div>
+        <div class="rs-solid bs-solid" id="80"></div>
+    </div>
+     
+    <div class="btn-wrapper">
+        <div class="difficulty-wrapper">
+            <p>Difficulty Level</p>
+            <select class="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">hard</option>
+            </select>
+        </div>
+        <button class="generate-soduko">Generate Soduko</button>
+        <button class="solve-soduko">Solve</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

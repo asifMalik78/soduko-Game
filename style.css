@@ -1,0 +1,140 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #0099f7, #f11712);
+}
+
+
+/* main heading */
+#main-heading{
+    padding: 3px;
+}
+
+
+#main-heading h1{
+    text-align: center;
+    font-size: 2.5rem;
+    word-spacing: 10px;
+    letter-spacing: 6px;
+}
+
+/* left side solid border */
+.ls-solid{
+    border-left: 2px solid #000000FF;
+}
+
+/* right side solid border */
+.rs-solid{
+    border-right: 2px solid #000000FF;
+}
+
+/* top side solid border */
+.ts-solid{
+    border-top: 2px solid #000000FF;
+}
+
+/* bottom side solid border */
+.bs-solid{
+    border-bottom: 2px solid #000000FF;
+}
+
+
+/* left side dashed border */
+.ls-dashed{
+    border-left: 2px dashed rgba(0, 0, 0, 0.348);
+}
+
+/* right side dashed border */
+.rs-dashed{
+    border-right: 2px dashed rgba(0, 0, 0, 0.348);
+}
+
+/* top side dashed border */
+.ts-dashed{
+    border-top: 2px dashed rgba(0, 0, 0, 0.348);
+}
+
+/* bottom side dashed border */
+.bs-dashed{
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.348);
+}
+
+
+/* main container of table */
+.container{
+    display: flex;
+    width: 540px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:10px auto;
+    box-shadow: 1px 1px 15px black inset;
+    overflow: hidden;
+    background-color:#F2F2F2;
+}
+
+/* columns */
+.container div{
+    height: 60px;
+    width: 60px;
+    font-size: 2.5rem;
+    text-align: center;
+    padding:5px;
+}
+
+
+.container div:hover{
+    background-color: #B0ECFF;
+}
+
+
+.btn-wrapper{
+    width: 550px;
+    margin:50px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+
+}
+
+.difficulty-wrapper p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.difficulty-wrapper select{
+    height: 30px;
+    width: 185px;
+    color:black;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.generate-soduko , .solve-soduko{
+    font-size: 1.5rem;
+    padding:8px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #000000FF;
+}
+
+
+.generate-soduko{
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.solve-soduko{
+    background-color: green;
+    color: white;
+    border:none;
+}
+
