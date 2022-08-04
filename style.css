@@ -72,8 +72,8 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin:10px auto;
-    box-shadow: 1px 1px 15px black inset;
+    margin:50px  auto  0px auto;
+    /* box-shadow: 1px 1px 15px black inset; */
     overflow: hidden;
     background-color:#F2F2F2;
 }
@@ -95,34 +95,29 @@ body{
 
 .btn-wrapper{
     width: 550px;
-    margin:50px auto 0 auto;
+    margin:30px auto 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: initial;
+    align-items: center;
 
 }
 
-.difficulty-wrapper p{
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 200;
-    letter-spacing: 2px;
-}
+
 
 .difficulty-wrapper select{
     height: 30px;
     width: 185px;
     color:black;
     font-size: 1.2rem;
-    font-weight: 200;
+    border-radius: 12px;
+    outline: none;
 }
 
 .generate-soduko , .solve-soduko{
-    font-size: 1.5rem;
-    padding:8px;
+    font-size: 1.2rem;
+    padding: 10px;
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 1px 1px 10px #000000FF;
 }
 
 
