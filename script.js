@@ -96,9 +96,7 @@ function isPossible(board , r , c , num , n){
 }
 
 
-
-
-function solveBoard(board , i , j , n){
+ function solveBoard(board , i , j , n){
     if(i==n){
         changeBoard(board);
         return;

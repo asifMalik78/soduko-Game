@@ -1,18 +1,22 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soduko Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-<body>
-    <div id="main-heading">
-        <h1>SODUKO GAME</h1>
-    </div>
-    <div class="container">
-        <div class="ls-solid ts-solid ts-solid rs-dashed bs-dashed" id="0"></div>
+  </head>
+  <body>
+    <div class="parent-container">
+        <div id="main-heading">
+            <h1>SODUKO GAME</h1>
+          </div>
+      <div class="container">
+        <div
+          class="ls-solid ts-solid ts-solid rs-dashed bs-dashed"
+          id="0"
+        ></div>
         <div class="ts-solid rs-dashed bs-dashed" id="1"></div>
         <div class="ts-solid rs-solid bs-dashed" id="2"></div>
         <div class="ts-solid rs-dashed bs-dashed" id="3"></div>
@@ -54,7 +58,7 @@
         <div class="rs-dashed bs-dashed" id="39"></div>
         <div class="rs-dashed bs-dashed" id="40"></div>
         <div class="rs-solid bs-dashed" id="41"></div>
-        <div class=" rs-dashed bs-dashed" id="42"></div>
+        <div class="rs-dashed bs-dashed" id="42"></div>
         <div class="rs-dashed bs-dashed" id="43"></div>
         <div class="rs-solid bs-dashed" id="44"></div>
         <div class="ls-solid rs-dashed bs-solid" id="45"></div>
@@ -93,20 +97,20 @@
         <div class="rs-dashed bs-solid" id="78"></div>
         <div class="rs-dashed bs-solid" id="79"></div>
         <div class="rs-solid bs-solid" id="80"></div>
-    </div>
-     
-    <div class="btn-wrapper">
+      </div>
+
+      <div class="btn-wrapper">
         <div class="difficulty-wrapper">
-            <select class="difficulty">
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">hard</option>
-            </select>
+          <select class="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">hard</option>
+          </select>
         </div>
         <button class="generate-soduko">Generate Soduko</button>
         <button class="solve-soduko">Solve</button>
+      </div>
     </div>
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
